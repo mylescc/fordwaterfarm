@@ -2,8 +2,6 @@
 
 [ ![Codeship Status for mylescc/fordwaterfarm](https://www.codeship.io/projects/b1bc4460-3b6c-0132-4528-725ed1c46ce5/status)](https://www.codeship.io/projects/42648)
 
-
-
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

@@ -18,14 +18,23 @@
       <ul class="nav nav-pills">
         <li><%= link_to 'Home', root_path %></li>
         <li><%= link_to 'About', about_path %></li>
-        <li><%= link_to 'Info', info_path %></li>
         <li><%= link_to 'Facilities', facilities_path %></li>
         <li><%= link_to 'Local Attractions', local_path %></li>
+        <li><%= link_to 'Info', info_path %></li>
         <li><%= link_to 'How To Get There', how_to_get_there_path %></li>
       </ul>
+      <hr/>
     </div>
   </div>
   <%= yield %>
+  <hr/>
+  <div class="row">
+    <div class="col-sm-4">
+      <p>Contact us: <a href="mailto:isobel.cowpercoles@gmail.com">isobel.cowpercoles@gmail.com</a></p>
+    </div>
+    <div class="col-sm-4"></div>
+    <div class="col-sm-4"></div>
+  </div>
 </div>
 
 

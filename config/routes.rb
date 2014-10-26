@@ -1,6 +1,13 @@
 Rails.application.routes.draw do
 
   root 'static#home'
+
+  get 'about', to: 'static#about'
+  get 'facilities', to: 'static#facilities'
+  get 'local', to: 'static#local'
+  get 'info', to: 'static#info'
+  get 'how-to-get-there', to: 'static#how_to_get_there'
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

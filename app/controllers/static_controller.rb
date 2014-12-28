@@ -1,9 +1,11 @@
 class StaticController < ApplicationController
 
   def home
+    
   end
 
   def about
+
   end
 
   def facilities
@@ -11,7 +13,6 @@ class StaticController < ApplicationController
   end
 
   def local
-
   end
 
   def info

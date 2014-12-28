@@ -44,3 +44,5 @@ gem 'pg', group: :production
 # gem 'debugger', group: [:development, :test]
 
 
+
+gem 'angularjs-rails', '1.3.36'

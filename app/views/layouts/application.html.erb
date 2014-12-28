@@ -16,13 +16,13 @@
         <h1><%= link_to 'Fordwater Farm', root_path %></h1>
       </div>
       <ul class="nav nav-pills">
-        <li><%= link_to 'Home', root_path %></li>
-        <li><%= link_to 'About', about_path %></li>
-        <li><%= link_to 'Facilities', facilities_path %></li>
-        <li><%= link_to 'Local Area', local_path %></li>
-        <li><%= link_to 'Information for Guests', info_path %></li>
-        <li><%= link_to 'How To Get There', how_to_get_there_path %></li>
-      </ul>
+        <li class="<%= 'active' if  request.path.include?('home') || request.path == '/'%>"><%= link_to 'Home', root_path %></li>
+        <li class="<%= 'active' if  request.path.include?('about')%>"><%= link_to 'About', about_path %></li>
+        <li class="<%= 'active' if  request.path.include?('facilities')%>"><%= link_to 'Facilities', facilities_path %></li>
+        <li class="<%= 'active' if  request.path.include?('local')%>"><%= link_to 'Local Area', local_path %></li>
+        <li class="<%= 'active' if  request.path.include?('info')%>"><%= link_to 'Information for Guests', info_path %></li>
+        <li class="<%= 'active' if  request.path.include?('how-to-get-there')%>"><%= link_to 'How To Get There', how_to_get_there_path %></li>
+      </ul
       <hr/>
     </div>
   </div>

@@ -8,24 +8,33 @@
 </head>
 <body>
 
-
-<div class="container">
-  <div class="row">
-    <div class="col-sm-12">
-      <div class="page-header">
-        <h1><%= link_to 'Fordwater Farm', root_path %></h1>
-      </div>
-      <ul class="nav nav-pills">
+<nav class="navbar navbar-default navbar-static-top">
+  <div class="container">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <%= link_to 'Fordwater Farm', root_path, class:'navbar-brand'%>
+    </div>
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
         <li class="<%= 'active' if  request.path.include?('home') || request.path == '/'%>"><%= link_to 'Home', root_path %></li>
         <li class="<%= 'active' if  request.path.include?('about')%>"><%= link_to 'About', about_path %></li>
         <li class="<%= 'active' if  request.path.include?('facilities')%>"><%= link_to 'Facilities', facilities_path %></li>
         <li class="<%= 'active' if  request.path.include?('local')%>"><%= link_to 'Local Area', local_path %></li>
         <li class="<%= 'active' if  request.path.include?('info')%>"><%= link_to 'Information for Guests', info_path %></li>
         <li class="<%= 'active' if  request.path.include?('how-to-get-there')%>"><%= link_to 'How To Get There', how_to_get_there_path %></li>
-      </ul
-      <hr/>
+      </ul>
     </div>
   </div>
+</nav>
+
+
+<div class="container">
+
   <%= yield %>
   <hr/>
 
